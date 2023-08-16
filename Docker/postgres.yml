@@ -1,0 +1,10 @@
+version: '3'
+services :
+  base-project-pg:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=04041969
+      - POSTGRES_DB=demo
+    ports:
+      - '5433:5433'

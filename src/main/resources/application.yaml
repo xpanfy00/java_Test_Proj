@@ -1,0 +1,20 @@
+spring:
+  liquibase:
+    change-log: classpath:/schema.xml
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  datasource:
+
+
+    url: jdbc:postgresql://localhost:5432/test3
+    password: 04041969
+    username: postgres
+
+prefix-service:
+  version: v2
+
+server:
+  servlet:
+    context-path: /v2
